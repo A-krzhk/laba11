@@ -120,6 +120,7 @@ namespace laba11
             }
 
             //Вывод информации из очереди в консоль
+            Console.WriteLine("Очередь:");
             PrintQueue(queue);
 
             //Поиск элемента в очереди
@@ -172,12 +173,17 @@ namespace laba11
             Console.WriteLine("\n несколько раз запущенный поиск срединного элемента");
             Console.WriteLine(collections.FindMiddleElem());
             Console.WriteLine(collections.FindMiddleElem());
+            Console.WriteLine(collections.FindMiddleElem());
+
 
             Console.WriteLine("\n несколько раз запущенный поиск последнего элемента");
             Console.WriteLine(collections.FindLastElem());
             Console.WriteLine(collections.FindLastElem());
+            Console.WriteLine(collections.FindLastElem());
+
 
             Console.WriteLine("\n несколько раз запущенный поиск несуществующего элемента");
+            Console.WriteLine(collections.NotFindElem());
             Console.WriteLine(collections.NotFindElem());
             Console.WriteLine(collections.NotFindElem());
 

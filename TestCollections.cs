@@ -49,24 +49,15 @@ namespace laba11
                     ////Поиск элементов 
                     if (i == 0)
                     {
-                        firstElem.Name = tree.Name;
-                        firstElem.Color = tree.Color;
-                        firstElem.Height = tree.Height;
-                        firstElem.id.Number = tree.id.Number;
+                        firstElem = (Tree)tree.Clone();
                     }
                     else if (i == length / 2)
                     {
-                        middleElem.Name = tree.Name;
-                        middleElem.Color = tree.Color;
-                        middleElem.Height = tree.Height;
-                        middleElem.id.Number = tree.id.Number;
+                        middleElem = (Tree)tree.Clone();
                     }
                     else if (i == length - 1)
                     {
-                        lastElem.Name = tree.Name;
-                        lastElem.Color = tree.Color;
-                        lastElem.Height = tree.Height;
-                        lastElem.id.Number = tree.id.Number;
+                        lastElem = (Tree)tree.Clone();
                     }
 
                     Console.WriteLine(tree);
